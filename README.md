@@ -44,7 +44,10 @@ docker pull mysql:8.0
 ```
 
 ### 3. Levantar los contenedores
-Para iniciar todos los servicios (frontend, backend y base de datos), ejecuta el siguiente comando en la raíz del proyecto (esto ejecutará docker-compose para levantar todos los contenedores):
+Para iniciar todos los servicios (frontend, backend y base de datos), ejecuta el siguiente comando en la raíz del proyecto (esto ejecutará docker-compose para levantar todos los contenedores):  
+
+IMPORTANTE: (Docker Engine debe estar ejecutandose, es decir, se debe abrir docker desktop antes de ejecutar el siguiente comando) 
+
 ```
 docker-compose up --build
 ```
