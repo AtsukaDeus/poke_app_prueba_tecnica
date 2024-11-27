@@ -149,6 +149,28 @@ const PokemonList = () => {
               className="w-24 h-24 mb-4"
             />
             <h2 className="text-xl font-semibold">{pokemon.name}</h2>
+            <div className="p-4 rounded-lg shadow-sm w-full max-w-xs mx-auto">
+              <p className="font-semibold text-white mb-2">Tipo: 
+                <span className="font-medium text-blue-500"> {pokemon.type_1}</span>
+              </p>
+              <p className="font-semibold text-white mb-2">Estadísticas:</p>
+              <div className="flex justify-between text-sm text-gray-600">
+                <div className="flex flex-col items-center">
+                  <p className="font-semibold text-white">Attack</p>
+                  <p>{pokemon.attack}</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <p className="font-semibold text-white">Defense</p>
+                  <p>{pokemon.defense}</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <p className="font-semibold text-white">Speed</p>
+                  <p>{pokemon.speed}</p>
+                </div>
+              </div>
+            </div>
+
+            
           </div>
         ))}
       </div>
